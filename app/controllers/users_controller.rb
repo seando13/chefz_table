@@ -20,6 +20,7 @@ class UsersController < ApplicationController
     else
       render :new
     end
+  end
 
   def edit
     @user = User.find params[:id]
@@ -38,6 +39,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit(:email, :image, :bio, :name, :location, :phone, :password, :password_confirmation)
   end
