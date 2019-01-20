@@ -1,4 +1,12 @@
 <h1>All Users</h1>
 <% @users.each do |user| %>
-  <p><%= user.email %></p>
+  <%= image_tag user.image, :class => 'thumb' %>
+<ul>
+  <li>Name: <%= link_to user.name, users_path %></li>
+  <li>Bio: <%= link_to user.bio, users_path %></li>
+  <li>Location: <%= link_to user.location, users_path %></li>
+  <li>Chef: <%= link_to user.chef, users_path %></li>
+  <li>Phone: <%= link_to user.phone, users_path %></li>
+  <li>Email: <%= link_to user.email, users_path %></li>
+</ul>
 <% end %>

@@ -6,9 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-u1 = User.create :email => 'craigsy@ga.co', :password => 'chicken', :name => 'Craigsy', :bio => 'I am a chef that specialises in Thai cuisine.', :image => 'http://www.fillmurray.com/600/600', :location => 'Sydney', :chef => true, :phone => '04 0000 0000'
-u2 = User.create :email => 'jonesy@ga.co', :password => 'chicken', :name => 'Jonesy', :bio => "Need help, I can't even boil water", :image => 'http://www.fillmurray.com/620/620', :location => 'Sydney', :chef => false, :phone => '04 0000 0001'
-u1 = User.create :email => 'daveyy@ga.co', :password => 'chicken', :name => 'Davey', :bio => 'I am a chef that specialises in Japanese cuisine.', :image => 'http://www.fillmurray.com/610/610', :location => 'Sydney', :chef => true, :phone => '04 0000 0002'
+u1 = User.create :email => 'craigsy@ga.co', :password => 'chicken', :name => 'Craigsy', :bio => 'I am a chef that specialises in Thai cuisine.', :image => 'http://www.fillmurray.com/200/200', :location => 'Sydney', :chef => true, :phone => '04 0000 0000'
+u2 = User.create :email => 'jonesy@ga.co', :password => 'chicken', :name => 'Jonesy', :bio => "I need help, I can't even boil water", :image => 'http://www.fillmurray.com/204/204', :location => 'Sydney', :chef => false, :phone => '04 0000 0001'
+u3 = User.create :email => 'davey@ga.co', :password => 'chicken', :name => 'Davey', :bio => 'I am a chef that specialises in Japanese cuisine.', :image => 'http://www.fillmurray.com/202/202', :location => 'Sydney', :chef => true, :phone => '04 0000 0002'
+
 
 Cuisine.destroy_all
 c1 = Cuisine.create :image => 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg', :name => 'Thai', :user_id => 1
