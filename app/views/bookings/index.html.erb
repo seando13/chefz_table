@@ -1,0 +1,8 @@
+<h1>All Bookings</h1>
+<% @bookings.each do |booking| %>
+
+<ul>
+  <li>When: <%= link_to booking.name, bookings_path %></li>
+  <li>Address: <%= link_to booking.addresss, bookings_path %></li>
+</ul>
+<% end %>

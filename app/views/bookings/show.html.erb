@@ -1,0 +1,12 @@
+<h2><%= @booking.name %></h2>
+<%= image_tag @booking.image, :class => 'feature' %>
+<ul>
+  <li>When: <%= @booking.when %></li>
+  <li>Address: <%= @booking.address %></li>
+</ul>
+
+
+<div class="controls">
+  <%= link_to 'Edit booking', edit_booking_path(@booking) %>
+  <%= link_to 'Delete booking', @booking, :method => 'delete' %>
+</div>

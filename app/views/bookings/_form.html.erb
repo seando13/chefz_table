@@ -1,0 +1,9 @@
+<%= form_for @booking do |f| %>
+  <%= f.label :when %>
+  <%= f.text_field :when, :autofocus => true, :required => true %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address, :autofocus => true, :required => true %>
+
+  <%= f.submit %>
+  <% end %>
