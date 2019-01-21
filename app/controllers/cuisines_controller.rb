@@ -8,7 +8,7 @@ class CuisinesController < ApplicationController
   end
 
   def new
-    @cuisines = Cuisine.new
+    @cuisine = Cuisine.new
   end
 
   def create
@@ -17,6 +17,7 @@ class CuisinesController < ApplicationController
       session[:cuisine_id] = @cuisine.id
       redirect_to root_path
     else
+      flash[:errors] = @cuisine.errors.full_messages
       render :new
     end
   end
@@ -27,10 +28,15 @@ class CuisinesController < ApplicationController
 
   def update
     cuisine = Cuisine.find params[:id]
-    redirect_to cuisine_params
-    redirect_to cuisine
-  end
+    cuisine.update cuisine_params
 
+    if cuisine.update(cuisine_params)
+    redirect_to cuisines_path
+  else
+    flash[:errors] = user.errors.full_messages
+    render :edit
+  end
+end
   def destroy
     cuisine = Cuisine.find params[:id]
     cuisine.destroy

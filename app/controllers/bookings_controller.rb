@@ -8,7 +8,7 @@ class BookingsController < ApplicationController
   end
 
   def new
-    @bookings = Booking.new
+    @booking = Booking.new
   end
 
   def create
@@ -17,6 +17,7 @@ class BookingsController < ApplicationController
       session[:booking_id] = @booking.id
       redirect_to root_path
     else
+      flash[:errors] = @booking.errors.full_messages
       render :new
     end
   end
@@ -26,9 +27,15 @@ class BookingsController < ApplicationController
   end
 
   def update
-    booking = Booking.find params[:id]
-    booking.update booking_params
-    redirect_to bookings_path
+    @booking = Booking.find params[:id]
+    @booking.update booking_params
+
+    if @booking.update(booking_params)
+      redirect_to bookings_path
+    else
+      flash[:errors] = @booking.errors.full_messages
+      render :edit
+    end
   end
 
   def destroy
@@ -40,6 +47,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:image, :name)
+    params.require(:booking).permit(:when, :address, :user_id, :cuisine_id)
   end
 end

@@ -1,3 +1,14 @@
+<% if flash[:errors].present? %>
+ <strong>Please correct the following errors in the form:</strong>
+ <ol>
+   <% flash[:errors].each do |error| %>
+     <li>
+       <%= error %>
+     </li>
+   <% end %>
+ </ol>
+<% end %>
+
 <%= form_for @booking do |f| %>
   <%= f.label :when %>
   <%= f.text_field :when, :autofocus => true, :required => true %>

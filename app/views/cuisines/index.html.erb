@@ -5,7 +5,10 @@
   <li>Name: <%= link_to cuisine.name, cuisines_path %></li>
 </ul>
 
-
+<div class="controls">
+  <%= link_to 'Edit cuisine', edit_cuisine_path(cuisine.id) %>
+  <%= link_to 'Delete cuisine', cuisine_path(cuisine.id), :method => 'delete' %>
+</div>
 
 
 <% end %>
