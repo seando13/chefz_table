@@ -5,8 +5,6 @@
 
 </ul>
 
-
-<div class="controls">
-  <%= link_to 'Edit user', edit_user_path(@user) %>
-  <%= link_to 'Delete user', @user, :method => 'delete' %>
-</div>
+<% @user.cuisines.each do |cuisine| %>
+<%= link_to cuisine.name, cuisine %>
+<% end %>

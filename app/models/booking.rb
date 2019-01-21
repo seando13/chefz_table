@@ -12,6 +12,6 @@
 #
 
 class Booking < ApplicationRecord
-  has_many :users
+  belongs_to :user
   has_many :cuisines
 end

@@ -2,7 +2,13 @@
 <% @bookings.each do |booking| %>
 
 <ul>
-  <li>When: <%= link_to booking.name, bookings_path %></li>
-  <li>Address: <%= link_to booking.addresss, bookings_path %></li>
+  <li>When: <%= link_to booking.when, bookings_path %></li>
+  <li>Address: <%= link_to booking.address, bookings_path %></li>
 </ul>
+
+<div class="controls">
+  <%= link_to 'Edit booking', edit_booking_path(booking.id) %>
+  <%= link_to 'Delete booking', booking_path(booking.id), :method => 'delete' %>
+</div>
+
 <% end %>

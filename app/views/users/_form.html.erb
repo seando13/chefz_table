@@ -1,3 +1,14 @@
+<% if flash[:errors].present? %>
+ <strong>Please correct the following errors in the form:</strong>
+ <ol>
+   <% flash[:errors].each do |error| %>
+     <li>
+       <%= error %>
+     </li>
+   <% end %>
+ </ol>
+<% end %>
+
 <%= form_for @user do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, :autofocus => true, :required => true %>
@@ -18,13 +29,13 @@
   <%= f.text_field :location, :required => true %>
 
   <%= f.label :bio %>
-  <%= f.text_field :bio %>
+  <%= f.text_field :bio, :required => true %>
 
   <%= f.label :image %>
-  <%= f.url_field :image %>
+  <%= f.url_field :image, :required => true %>
 
   <%= f.label :chef %>
-  <%= f.check_box :chef %>
+  <%= f.check_box :chef, :null => false %>
 
   <%= f.submit %>
 <% end %>
