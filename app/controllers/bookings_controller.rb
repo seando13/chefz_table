@@ -4,7 +4,7 @@ class BookingsController < ApplicationController
   end
 
   def show
-    @booking = Booking.find params[:id]
+    @bookings = Booking.find params[:id]
   end
 
   def new
@@ -13,9 +13,10 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new booking_params
+    @booking.user_id = @current_user.id
     if @booking.save
       session[:booking_id] = @booking.id
-      redirect_to root_path
+      redirect_to bookings_path
     else
       flash[:errors] = @booking.errors.full_messages
       render :new
@@ -27,13 +28,13 @@ class BookingsController < ApplicationController
   end
 
   def update
-    @booking = Booking.find params[:id]
-    @booking.update booking_params
+    booking = Booking.find params[:id]
+    booking.update booking_params
 
-    if @booking.update(booking_params)
-      redirect_to bookings_path
+    if booking.update(booking_params)
+    redirect_to bookings_path
     else
-      flash[:errors] = @booking.errors.full_messages
+      flash[:errors] = booking.errors.full_messages
       render :edit
     end
   end

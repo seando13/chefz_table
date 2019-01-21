@@ -15,7 +15,7 @@ class CuisinesController < ApplicationController
     @cuisine = Cuisine.new cuisine_params
     if @cuisine.save
       session[:cuisine_id] = @cuisine.id
-      redirect_to root_path
+      redirect_to cuisines_path
     else
       flash[:errors] = @cuisine.errors.full_messages
       render :new
@@ -32,11 +32,12 @@ class CuisinesController < ApplicationController
 
     if cuisine.update(cuisine_params)
     redirect_to cuisines_path
-  else
+    else
     flash[:errors] = user.errors.full_messages
     render :edit
+    end
   end
-end
+
   def destroy
     cuisine = Cuisine.find params[:id]
     cuisine.destroy
