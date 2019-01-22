@@ -30,6 +30,7 @@ gem 'rails_12factor', group: :production
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'cloudinary'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

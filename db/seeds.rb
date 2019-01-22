@@ -12,8 +12,36 @@ u3 = User.create :email => 'davey@ga.co', :password => 'chicken', :name => 'Dave
 
 
 Cuisine.destroy_all
-c1 = Cuisine.create :image => 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg', :name => 'Thai', :user_id => 1
-c2 = Cuisine.create :image => 'https://u.tfstatic.com/restaurant_photos/930/69930/169/612/kaizen-japanese-food-sugestao-do-chef-9ad45.jpg', :name => 'Japanese', :user_id => 3
+c1 = Cuisine.create :image => 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg', :name => 'Thai', :user_id => u1.id
+c2 = Cuisine.create :image => 'https://u.tfstatic.com/restaurant_photos/930/69930/169/612/kaizen-japanese-food-sugestao-do-chef-9ad45.jpg', :name => 'Japanese', :user_id => u2.id
+c3 = Cuisine.create :image => 'https://media-cdn.tripadvisor.com/media/photo-s/0f/16/5d/ba/authentic-mexican-food.jpg', :name => 'Mexican', :user_id => u3.id
+c4 = Cuisine.create :image => 'https://www.ediblebrooklyn.com/wp-content/uploads/sites/2/2017/12/IMG_1339.jpg', :name => 'Chinese', :user_id => u1.id
+c5 = Cuisine.create :image => 'http://www.vietnameserestaurantkc.com/wp-content/uploads/2018/02/pho-u-vietnamese-cuisine-1.jpg', :name => 'Vietnamese', :user_id => u2.id
+c6 = Cuisine.create :image => 'https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/cms/indonesia-food-nasi-goreng-1520233396-1000X561.jpg', :name => 'Indonesian', :user_id => u3.id
+c7 = Cuisine.create :image => 'https://migrationology.smugmug.com/Singapore-2016/i-fDSC6zr/0/X3/singapore-food-guide-3-X3.jpg', :name => 'Singaporean', :user_id => u1.id
+c8 = Cuisine.create :image => 'https://www.myrtlebeach.com/wp-content/uploads/2015/10/BestItalian-Ravioli-Dining.jpg', :name => 'Italian', :user_id => u2.id
+c9 = Cuisine.create :image => 'https://img.taste.com.au/z2klv7H-/w720-h480-cfill-q80/taste/2016/11/pear-and-caramel-tarte-tatin-101649-1.jpeg', :name => 'French', :user_id => u3.id
+c10 = Cuisine.create :image => 'https://bawza.com/wp-content/uploads/2018/02/image.jpg', :name => 'Ethiopian', :user_id => u1.id
+c11 = Cuisine.create :image => 'https://germanculture.com.ua/beta/wp-content/uploads/2015/12/german-food.jpg', :name => 'German', :user_id => u2.id
+c12 = Cuisine.create :image => 'http://www.ingramwynd.co.uk/wp-content/uploads/2016/12/balmoral-plated.jpg', :name => 'Scottish', :user_id => u3.id
+c13 = Cuisine.create :image => 'https://s3.amazonaws.com/bncore/wp-content/uploads/2018/12/1011731878-morluskis-re13.jpg', :name => 'Polish', :user_id => u1.id
+c14 = Cuisine.create :image => 'http://www.mapuchenative.com/wp-content/uploads/2016/11/slider_4-1024x552.jpg', :name => 'Argentinain', :user_id => u2.id
+c15 = Cuisine.create :image => 'http://sf1.mariefranceasia.com/wp-content/uploads/sites/7/2016/08/28522075252_537cda14e0_z-628x410.jpg', :name 'Malaysian', :user_id => u3.id
+c16 = Cuisine.create :image => 'http://www.tengudenver.com/wp-content/uploads/2018/06/greek-food-1024x585.jpg', :name => 'Greek', :user_id => u1.id
+c17 = Cuisine.create :image => 'https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/22/59/32/vFbTdriRQyl0dt1MealF_chicken-seafood-paella-6001.jpg', :name => 'Spanish', :user_id => u2.id
+c18 = Cuisine.create :image => 'https://media-cdn.tripadvisor.com/media/photo-s/09/17/2b/5b/grand-beirut-restaurant.jpg', :name => 'Lebanese', :user_id => u3.id
+c19 = Cuisine.create :image => 'https://www.lashworldtour.com/wp-content/uploads/2014/07/kokoda-and-fried-cassava.jpg', :name => 'Fijian', :user_id => u1.id
+c20 = Cuisine.create :image => 'https://www.tahititravel.com.au/wp/wp-content/uploads/2018/08/xTTC_main_dishes_to_try.jpg.pagespeed.ic.m_vWNGsOOf.jpg', :name => 'Tahitian', :user_id => u2.id
+c21 = Cuisine.create :image => 'https://spoonuniversity.com/wp-content/uploads/sites/92/2016/04/khao-poon-1.jpg', :name => 'Laotian', user_id => u3.id
+
+
+
+
+
+
+
+
+
 
 Booking.destroy_all
 b1 = Booking.create :when => '2004-10-19 10:23:54', :address => "4 Distillery Drive Pyrmont NSW 2009", :user_id => 1, :cuisine_id => 1

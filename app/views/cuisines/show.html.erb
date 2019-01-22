@@ -5,6 +5,8 @@
 
 </ul>
 
-
-
+<% @cuisine.each do |c| %>
+  <ul>
+    <li><%= c.chef.name  %></li>
+  </ul>
 <% end %>
