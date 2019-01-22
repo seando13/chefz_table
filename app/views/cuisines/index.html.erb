@@ -2,7 +2,8 @@
 <% @cuisines.each do |cuisine| %>
   <%= image_tag cuisine.image, :class => 'thumb' %>
 <ul>
-  <li>Name: <%= link_to cuisine.name, cuisines_path %></li>
+  <li>Name: <%= link_to cuisine.name, cuisine_path(cuisine.id) %></li>
+
 </ul>
 
 <div class="controls">

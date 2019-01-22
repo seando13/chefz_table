@@ -2,7 +2,12 @@
 <%= image_tag @user.image, :class => 'feature' %>
 <ul>
   <li>Name: <%= @user.name %></li>
+</ul>
 
+<ul>
+<% @user.cuisines.each do |cuisine| %>
+<li>Cuisine: <%= cuisine.name %></li>
+<% end %>
 </ul>
 
 <% @user.cuisines.each do |cuisine| %>

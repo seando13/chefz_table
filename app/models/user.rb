@@ -17,7 +17,7 @@
 
 class User < ApplicationRecord
   has_secure_password
-  has_and_belongs_to_many :cuisines
+  has_and_belongs_to_many :cuisines, :optional => true 
   # Validations: see the Rails Guide
   validates :email, :presence => true, :uniqueness => true
 

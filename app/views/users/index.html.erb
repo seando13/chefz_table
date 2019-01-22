@@ -2,7 +2,7 @@
 <% @users.each do |user| %>
   <%= image_tag user.image, :class => 'thumb' %>
   <ul>
-    <li>Name: <%= link_to user.name, users_path %></li>
+    <li>Name: <%= link_to user.name, user_path(user.id) %></li>
     <li>Bio: <%= link_to user.bio, users_path %></li>
     <li>Location: <%= link_to user.location, users_path %></li>
     <li>Chef: <%= user.chef %></li>

@@ -5,8 +5,17 @@
 
 </ul>
 
-<% @cuisine.each do |c| %>
+<% @cuisine.users.each do |c| %>
   <ul>
-    <li><%= c.chef.name  %></li>
+    <li><%= c.name  %></li>
   </ul>
+<% end %>
+
+
+
+<%= form_for @cuisine do |f| %>
+<%= f.label :name %><br>
+
+<br>
+  <%= f.submit @cuisine.name %>
 <% end %>
