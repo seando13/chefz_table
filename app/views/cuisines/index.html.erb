@@ -2,10 +2,9 @@
 <% @cuisines.each do |cuisine| %>
 
 
-<div class="item">
+<div class="item"><br>
   <div class="photo" style="background-image:url(<%= cuisine.image  %>)"></div>
-  <div class="controls">
-
+<div class="controls">
     <%= link_to cuisine.name, cuisine_path(cuisine.id) %>
     <%= link_to 'Edit', edit_cuisine_path(cuisine.id) %>
     <%= link_to 'Delete', cuisine_path(cuisine.id), method: :delete, data: { confirm: 'Are you sure?' } %>

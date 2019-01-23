@@ -33,7 +33,9 @@ c18 = Cuisine.create :image => 'https://media-cdn.tripadvisor.com/media/photo-s/
 c19 = Cuisine.create :image => 'https://www.lashworldtour.com/wp-content/uploads/2014/07/kokoda-and-fried-cassava.jpg', :name => 'Fijian'
 c20 = Cuisine.create :image => 'https://www.tahititravel.com.au/wp/wp-content/uploads/2018/08/xTTC_main_dishes_to_try.jpg.pagespeed.ic.m_vWNGsOOf.jpg', :name => 'Tahitian'
 c21 = Cuisine.create :image => 'https://spoonuniversity.com/wp-content/uploads/sites/92/2016/04/khao-poon-1.jpg', :name => 'Laotian'
-
+c22 = Cuisine.create :image => 'https://adventurousmiriam.com/wp-content/uploads/2017/04/Atlas-Mountains-Morocco-19.jpg', :name => 'Moroccan'
+c23 = Cuisine.create :image => 'https://static.wixstatic.com/media/971153_0fb1ca04b57d4cd0a8db93729196880d~mv2.jpg/v1/fit/w_720,h_480,al_c,q_80/file.jpg', :name => 'Indian'
+c24 = Cuisine.create :image => 'https://i.ndtvimg.com/i/2016-06/korean-food_625x350_61467094819.jpg', :name => 'Korean'
 
 Booking.destroy_all
 b1 = Booking.create :when => '2004-10-19 10:23:54', :address => "4 Distillery Drive Pyrmont NSW 2009", :user_id => 1, :cuisine_id => 1

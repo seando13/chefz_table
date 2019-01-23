@@ -30,6 +30,7 @@
 
 .navbar {
   background-color: #7AB80D;
+  
 }
 
 .nav-item {
@@ -44,4 +45,8 @@
 .item .photo {
   height: 20vh;
   background-size: cover;
+}
+
+a .nav-link {
+  color: #000000;
 }
