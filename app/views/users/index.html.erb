@@ -6,8 +6,8 @@
   <div class="controls">
     Name: <%= link_to user.name, user_path(user.id) %><br>
     Bio: <%= link_to user.bio, users_path %><br>
-    Location: <%= link_to user.location, users_path %><br>
-    Chef: <%= user.chef %><br>
+    Location: <%= link_to user.location, users_path %>
+    Chef: <%= user.chef %>
     <%= link_to 'Edit', edit_user_path(user.id) %>
     <%= link_to 'Delete', user_path(user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 

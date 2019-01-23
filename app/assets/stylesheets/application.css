@@ -45,3 +45,7 @@
   height: 20vh;
   background-size: cover;
 }
+
+.feature {
+  width: 50%;
+}

@@ -1,15 +1,12 @@
 <h2><%= @user.name %></h2>
-<%= image_tag @user.image, :class => 'feature' %>
-<ul>
-  <li>Name: <%= @user.name %></li>
-</ul>
+<%= image_tag @user.image, :class => 'feature' %><br>
 
-<ul>
-<% @user.cuisines.each do |cuisine| %>
-<li>Cuisine: <%= cuisine.name %></li>
-<% end %>
-</ul>
+
+
 
 <% @user.cuisines.each do |cuisine| %>
-<%= link_to cuisine.name, cuisine %>
+<%= @user.name %>
+<%= link_to cuisine.name, cuisine %><br>
 <% end %>
+<br>
+<br>

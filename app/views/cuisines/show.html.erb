@@ -1,21 +1,17 @@
 <h2><%= @cuisine.name %></h2>
 <%= image_tag @cuisine.image, :class => 'feature' %>
-<ul>
-  <li>Cuisine: <%= @cuisine.name %></li>
-
-</ul>
-
-<% @cuisine.users.each do |c| %>
-  <ul>
-    <li><%= c.name  %></li>
-  </ul>
-<% end %>
-
-
-
-<%= form_for @cuisine do |f| %>
-<%= f.label :name %><br>
 
 <br>
-  <%= f.submit @cuisine.name %>
+
+<% @cuisine.users.each do |c| %><br>
+<%= c.name  %><br>
 <% end %>
+
+<br>
+
+<%= form_for @cuisine do |f| %>
+<%= f.submit @cuisine.name %>
+<% end %>
+
+<br>
+<br>
