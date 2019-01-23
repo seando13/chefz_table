@@ -14,7 +14,39 @@
  *= require_self
  */
 
- .thumb {
-   height: 300px;
-   width: 300px;
+ * {
+   padding: 0 0.5vw;
  }
+
+ .thumb {
+   height: 30vh;
+   width: 30vw;
+ }
+
+.logo {
+  text-align: center;
+}
+
+body {
+
+}
+
+.navbar {
+  background-color: #7AB80D;
+  color: #000000;
+}
+
+a {
+  color: #000000;
+}
+
+.cuisine {
+  max-width: 300px;
+}
+
+.feature {
+  max-width:100%;
+}
+
+float: none;
+display: inline-block;

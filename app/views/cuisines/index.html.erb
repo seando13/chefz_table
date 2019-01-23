@@ -8,7 +8,8 @@
 
 <div class="controls">
   <%= link_to 'Edit cuisine', edit_cuisine_path(cuisine.id) %>
-  <%= link_to 'Delete cuisine', cuisine_path(cuisine.id), :method => 'delete' %>
+  <%= link_to 'Delete cuisine', cuisine_path(cuisine.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+
 </div>
 
 
