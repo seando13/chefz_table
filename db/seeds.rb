@@ -6,10 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-u1 = User.create :email => 'craigsy@ga.co', :password => 'chicken', :name => 'Craigsy', :bio => 'I am a chef that specialises in Thai cuisine.', :image => 'http://www.fillmurray.com/200/200', :location => 'Sydney', :chef => true, :phone => '04 0000 0000'
-u2 = User.create :email => 'jonesy@ga.co', :password => 'chicken', :name => 'Jonesy', :bio => "I need help, I can't even boil water", :image => 'http://www.fillmurray.com/204/204', :location => 'Sydney', :chef => false, :phone => '04 0000 0001'
-u3 = User.create :email => 'davey@ga.co', :password => 'chicken', :name => 'Davey', :bio => 'I am a chef that specialises in Japanese cuisine.', :image => 'http://www.fillmurray.com/202/202', :location => 'Sydney', :chef => true, :phone => '04 0000 0002'
-
+u1 = User.create :email => 'angela@chefz.com', :password => 'chicken', :name => 'Angela Hartnett', :bio => "I am a Micehlin-starred chef. I specialise in French cuisine.", :image => 'https://secure.i.telegraph.co.uk/multimedia/archive/02971/angela_2971206k.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0000'
+u2 = User.create :email => 'dominique@chefz.com', :password => 'chicken', :name => 'Dominique Crenn', :bio => 'I have 3 Michelin stars. I speciaise in French Cuisine.', :image => 'https://b70f084e29f3f8faffb0-389fffc5b90936635d166a32fdb11b6a.ssl.cf3.rackcdn.com/andy-hayler-atelier-crenn-dominique-crenn-w709-h532.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0001'
+u3 = User.create :email => 'clare@chefz.com', :password => 'chicken', :name => 'Clare Smyth', :bio => 'I am the first British female chef to hold and retain 3 Michelin stars', :image => 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/04/25/11/chef-clare-smyth.jpg?w968', :location => 'Sydney', :chef => true, :phone => '04 0000 0002'
+u4 = User.create :email => 'marco@chefz.com', :password => 'chicken', :name => 'Marco Pierre White', :bio => "I am a chef that specialises in French cuisine.", :image => 'https://www.smartcompany.com.au/content/uploads/2018/01/Marco-Pierre-White-cropped.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0003'
+u5 = User.create :email => 'niki@chefz.com', :password => 'chicken', :name => 'Niki Nakayama', :bio => 'I am the owner of the top Japanese restaurant in California.', :image => 'http://kore.am/wp-content/uploads/2016/12/KORE-2016-NAKA-001.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0004'
+u6 = User.create :email => 'peter@chefz.com', :password => 'chicken', :name => 'Peter Gilmore', :bio => 'I am a chef that specialises in Australian cuisine.', :image => 'https://www.goodfood.com.au/content/dam/images/g/w/p/z/o/e/image.related.wideLandscape.940x529.h0cgbi.png/1539129077037.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0005'
+u7 = User.create :email => 'mashama@chefz.com', :password => 'chicken', :name => 'Mashama Bailey', :bio => 'I am the first African American woman nominated for the James Beard award.', :image => 'https://www.savannahtribune.com/wp-content/uploads/images/2015-10-21/6p1.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0006'
+u8 = User.create :email => 'gordon@chefz.com', :password => 'chicken', :name => 'Gordon Ramsay', :bio => 'I am a chef that specialises in Scottish cuisine.', :image => 'https://vegnews.com/media/W1siZiIsIjExOTU0L1ZlZ05ld3NHb3Jkb25SYW1zYXkucG5nIl0sWyJwIiwidGh1bWIiLCI2ODB4NDAyIyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNewsGordonRamsay.png?sha=bf714cba7f90c26b', :location => 'Sydney', :chef => true, :phone => '04 0000 0007'
+u9 = User.create :email => 'andy@chefz.com', :password => 'chicken', :name => 'Andy Ricker', :bio => "I am a Michelin star chef that resides in Sean's old hometown of Portland.", :image => 'https://jbf-media.s3.amazonaws.com/archive/jbf-2013/blog/additional/Ricker-Andy.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0008'
+u10 = User.create :email => 'ina@chefz.com', :password => 'chicken', :name => 'Ina Garten', :bio => 'I am a self-taught chef that is better known as, The Barefoot Contessa.', :image => 'https://d213sdapb08052.cloudfront.net/tmp/about/about_ina.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0009'
+u11 = User.create :email => 'elena@chefz.com', :password => 'chicken', :name => 'Elena Arzak', :bio => 'I have three Michelin stars and was named the best female chef in the world in 2012.', :image => 'http://finedininglovers.cdn.crosscast-system.com/BlogPost/xl_13784_Elena-Arzak-TP.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0010'
+u12 = User.create :email => 'ana@chefz.com', :password => 'chicken', :name => 'Ana Roš', :bio => "I was named the world's best female chef in 2017.", :image => 'https://www.goodfood.com.au/content/dam/images/g/t/x/k/8/o/image.related.wideLandscape.940x529.gtxj9a.png/1485921430828.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0011'
 
 Cuisine.destroy_all
 c1 = Cuisine.create :image => 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg', :name => 'Thai'
@@ -38,10 +46,24 @@ c23 = Cuisine.create :image => 'https://static.wixstatic.com/media/971153_0fb1ca
 c24 = Cuisine.create :image => 'https://i.ndtvimg.com/i/2016-06/korean-food_625x350_61467094819.jpg', :name => 'Korean'
 
 Booking.destroy_all
-b1 = Booking.create :when => '2004-10-19 10:23:54', :address => "4 Distillery Drive Pyrmont NSW 2009", :user_id => 1, :cuisine_id => 1
-b2 = Booking.create :when => '2004-10-20 10:23:54', :address => "2 Distillery Drive Pyrmont NSW 2009", :user_id => 3, :cuisine_id => 2
+b1 = Booking.create :when => '2019-10-19 18:00:00', :address => "2 Distillery Drive Pyrmont, NSW 2009", :user_id => 1, :cuisine_id => 1
+b2 = Booking.create :when => '2019-10-20 18:30:00', :address => "4 Distillery Drive Pyrmont, NSW 2009", :user_id => 2, :cuisine_id => 2
+b3 = Booking.create :when => '2019-10-21 19:00:00', :address => "6 Distileery Drive Pyrmont, NSW 2009", :user_id => 3, :cuisine_id => 3
+
+
+
+
 
 # Associations #################################################################
-c2.users << u1
-u1.cuisines << c11 << c12
-u3.cuisines << c4
+u1.cuisines << c9
+u2.cuisines << c9 << c12
+u3.cuisines << c12 << c13
+u4.cuisines << c9 << c24
+u5.cuisines << c2
+u6.cuisines << c11 << c12
+u7.cuisines << c15 << c22 << c19
+u8.cuisines << c9 << c12
+u9.cuisines << c1 << c5 << c21
+u10.cuisines << c8
+u11.cuisines << c10
+u12.cuisines << c24
