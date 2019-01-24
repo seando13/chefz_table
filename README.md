@@ -1,5 +1,5 @@
 # README
-# Project 1 Chefz table
+# Project 1 Chefz Table
 
 To get a closer look of the project visit: https://chefztable.herokuapp.com/
 
@@ -42,7 +42,7 @@ validates :email, :presence => true, :uniqueness => true
 
 ## Scope of Project as of 24-1-2019
 - Signup as a customer or chef
-- sign in is via email
+- Sign in is via email
 - Can use a profile photo but not required
 - Can look at cuisines that are on offer and which chefs offer cuisine
 - Can make a booking for a chef to come to you or your friend's home
@@ -61,4 +61,4 @@ A thank you to Linna for helping me with some layout issues that I had on this p
 
 And a thank you for Yianni of WDI-29 for his assistance on my controller issues and introducing me to the world of 'grid'. I will definitely be incorporating it in future projects.
 
-This project was completed at General Assembly WDI-30 in Sunny Sydney, Australia, January 2019. 
+This project was completed at General Assembly WDI-30 in Sunny Sydney, Australia, January 2019.
