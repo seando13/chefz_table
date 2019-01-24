@@ -18,7 +18,7 @@ u9 = User.create :email => 'andy@chefz.com', :password => 'chicken', :name => 'A
 u10 = User.create :email => 'ina@chefz.com', :password => 'chicken', :name => 'Ina Garten', :bio => 'I am a self-taught chef that is better known as, The Barefoot Contessa.', :image => 'https://d213sdapb08052.cloudfront.net/tmp/about/about_ina.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0009'
 u11 = User.create :email => 'elena@chefz.com', :password => 'chicken', :name => 'Elena Arzak', :bio => 'I have three Michelin stars and was named the best female chef in the world in 2012.', :image => 'http://finedininglovers.cdn.crosscast-system.com/BlogPost/xl_13784_Elena-Arzak-TP.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0010'
 u12 = User.create :email => 'ana@chefz.com', :password => 'chicken', :name => 'Ana Roš', :bio => "I was named the world's best female chef in 2017.", :image => 'https://www.goodfood.com.au/content/dam/images/g/t/x/k/8/o/image.related.wideLandscape.940x529.gtxj9a.png/1485921430828.jpg', :location => 'Sydney', :chef => true, :phone => '04 0000 0011'
-u13 = User.create :email => 'sean@chefz.com', :password => 'chicken', :name => 'Sean McCusker', :bio => "I can't even boil water.", :image => 'https://lh3.googleusercontent.com/-v5y4110p06E/AAAAAAAAAAI/AAAAAAAAAfk/mQq5n_tzkXk/photo.jpg', :location => 'Sydney', :chef => false, :phone => '04 0000 0012'
+u13 = User.create :email => 'sean@chefz.com', :password => 'chicken', :name => 'Sean McCusker', :bio => "I can't even boil water.", :image => 'https://vegnews.com/media/W1siZiIsIjExOTU0L1ZlZ05ld3NHb3Jkb25SYW1zYXkucG5nIl0sWyJwIiwidGh1bWIiLCI2ODB4NDAyIyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNewsGordonRamsay.png?sha=bf714cba7f90c26b', :location => 'Sydney', :chef => false, :phone => '04 0000 0012'
 
 Cuisine.destroy_all
 c1 = Cuisine.create :image => 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg', :name => 'Thai'
@@ -56,6 +56,7 @@ b3 = Booking.create :when => '2019-10-21 19:00:00', :address => "6 Distileery Dr
 
 
 # Associations #################################################################
+# Users and Cuisines
 u1.cuisines << c9
 u2.cuisines << c9 << c12
 u3.cuisines << c12 << c13
@@ -69,3 +70,5 @@ u10.cuisines << c8
 u11.cuisines << c10
 u12.cuisines << c24
 u13.cuisines << c1
+
+# Cuisines and Users

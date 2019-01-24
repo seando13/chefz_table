@@ -29,7 +29,6 @@ class CuisinesController < ApplicationController
   def update
     cuisine = Cuisine.find params[:id]
     cuisine.update cuisine_params
-
     if cuisine.update(cuisine_params)
     redirect_to cuisines_path
     else

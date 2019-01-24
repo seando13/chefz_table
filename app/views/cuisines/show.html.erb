@@ -1,15 +1,8 @@
 <h2><%= @cuisine.name %></h2>
-<%= image_tag @cuisine.image, :class => 'feature' %>
-
-<br>
+<%= image_tag @cuisine.image, :class => 'feature' %><br>
 
 <% @cuisine.users.each do |c| %><br>
 <%= c.name  %><br>
-<% end %>
-
-<br>
-
-<%= form_for @cuisine do |f| %>
 <% end %>
 
 <br>
