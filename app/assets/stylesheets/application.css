@@ -49,3 +49,24 @@
 .feature {
   width: 50%;
 }
+
+.user-container {
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 350px 350px 350px 350px;
+  /* text-align: center; */
+}
+
+.user-item {
+  min-width: auto;
+  min-height: auto;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.user-item .user-photo {
+  height: 50%;
+  background-size: cover;
+}

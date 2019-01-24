@@ -47,6 +47,6 @@ class CuisinesController < ApplicationController
   private
 
   def cuisine_params
-    params.require(:cuisine).permit(:image, :name)
+    params.require(:cuisine).permit(:image, :name, :user_id)
   end
 end

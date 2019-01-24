@@ -1,19 +1,16 @@
 <h1>All Users</h1>
-<% @users.each do |user| %>
-
-<div class="item">
-  <div class="photo" style="background-image:url(<%= user.image %>)"></div>
-  <div class="controls">
-    Name: <%= link_to user.name, user_path(user.id) %><br>
-    Bio: <%= link_to user.bio, users_path %><br>
-    Location: <%= link_to user.location, users_path %>
-    Chef: <%= user.chef %>
-    <%= link_to 'Edit', edit_user_path(user.id) %>
-    <%= link_to 'Delete', user_path(user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-
-  </div>
+<div class="user-container">
+  <% @users.each do |user| %>
+    <div class="user-item">
+      <div class="user-photo" style="background-image:url(<%= user.image %>)"></div>
+      <div class="controls">
+        Name: <%= link_to user.name, user_path(user.id) %><br>
+        Bio: <%= link_to user.bio, users_path %><br>
+        Location: <%= link_to user.location, users_path %><br>
+        Chef: <%= user.chef %><br>
+        <%= link_to 'Edit', edit_user_path(user.id) %>
+        <%= link_to 'Delete', user_path(user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
 </div>
-</div>
-
-
-<% end %>
