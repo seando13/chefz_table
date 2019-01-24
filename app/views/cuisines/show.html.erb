@@ -1,8 +1,10 @@
 <h2><%= @cuisine.name %></h2>
 <%= image_tag @cuisine.image, :class => 'feature' %><br>
 
-<% @cuisine.users.each do |c| %><br>
-<%= c.name  %><br>
+<% @cuisine.users.each do |user| %><br>
+Name: <%= link_to user.name, user %><br>
+Bio: <%= link_to user.bio, users_path %><br>
+Location: <%= link_to user.location, users_path %><br>
 <% end %>
 
 <br>

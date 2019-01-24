@@ -2,7 +2,6 @@
 <%= image_tag @user.image, :class => 'feature' %><br>
 
 <% @user.cuisines.each do |cuisine| %>
-<%= @user.name %>
 <%= link_to cuisine.name, cuisine %><br>
 <% end %>
 <br>
