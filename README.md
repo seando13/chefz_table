@@ -1,5 +1,5 @@
 # README
-Project 1 Chefz table
+# Project 1 Chefz table
 
 To get a closer look of the project visit: https://chefztable.herokuapp.com/
 
@@ -9,28 +9,4 @@ Chefz Table is an online network of certified, professional chefz providing on-s
 
 We have a multitude of chefz, that are well versed in multiple cuisines. They are here to provide you a safe learning environment and you have the opportunity to ask as many questions as you want with an expert. We believe that food is a way to bring people together. Another benefit of Chefz Table is that it works on your time schedule. During the lessons you will learn new terminology, basic skills, be introduced to new ideas, improve the timing of elements of your meal, and expand your existing palate.
 
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![](images/read/homepage.png)
