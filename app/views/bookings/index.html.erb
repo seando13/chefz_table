@@ -1,10 +1,10 @@
 <h1>All Bookings</h1>
 <% @bookings.each do |booking| %>
 
-<ul>
-  <li>When: <%= link_to booking.when, bookings_path %></li>
-  <li>Address: <%= link_to booking.address, bookings_path %></li>
-</ul>
+
+When: <%= link_to booking.when, bookings_path %><br>
+Address: <%= link_to booking.address, bookings_path %><br>
+
 
 <div class="controls">
   <%= link_to 'Edit booking', edit_booking_path(booking.id) %>

@@ -68,3 +68,4 @@ u9.cuisines << c1 << c5 << c21
 u10.cuisines << c8
 u11.cuisines << c10
 u12.cuisines << c24
+u13.cuisines << c1
