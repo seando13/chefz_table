@@ -3,14 +3,14 @@ Rails.application.routes.draw do
   #get 'users/new' # get rid of line
   root :to => 'pages#home'
   resources :users
-  resources :bookings
+  resources :reservations
   resources :cuisines
 
   get '/login' => 'session#new' # sign in form
   post '/login' => 'session#create' # sign in action
   delete '/login' => 'session#destroy' # sign out
 
-  
+
 
 
 end

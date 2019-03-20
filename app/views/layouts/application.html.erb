@@ -56,27 +56,3 @@
       <%= yield %>
       </body>
       </html>
-
-<!-- Old code that I discontinued in favour of Bootstrap.
-      </li>
-      <% if @current_user.present? %>
-        |
-        <%= link_to 'All Users', users_path %>
-        |
-        <%= link_to 'New User', new_user_path %>
-        |
-        <%= link_to 'All Cuisines', cuisines_path %>
-        |
-        <%= link_to 'New Cuisines', new_cuisine_path %>
-        |
-        <%= link_to 'All Bookings', bookings_path %>
-        |
-        <%= link_to 'New Bookings', new_booking_path %>
-        |
-        <%= link_to "Sign Out #{ @current_user.email }", login_path, :method => 'delete' %>
-        |
-      <% else %>
-        <%= link_to 'Sign Up', new_user_path %>
-        <%= link_to 'Sign In', login_path %>
-      <% end %>
-    </nav> -->

@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect_to root_path
+
     else
       flash[:errors] = @user.errors.full_messages
       render :new
@@ -31,9 +32,11 @@ class UsersController < ApplicationController
     user.update user_params
     if user.update(user_params)
       redirect_to users_path
+
     else
       flash[:errors] = user.errors.full_messages
       render :edit
+      
     end
   end
 
